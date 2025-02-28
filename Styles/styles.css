@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: rgb(12, 11, 11);
+    padding: 15px 0;
+    display: grid;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.jumbotron {
+    background: url('dj-event.jpg') no-repeat center center/cover;
+    color: rgb(46, 44, 44);
+    padding: 50px 20px;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dj-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.dj {
+    background: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>DJ para Eventos Sociales</h1>
+<nav>
+    <ul>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+</header>
+<section class="jumbotron">
+<h2>¡Haz que tu evento sea inolvidable!</h2>
+<p>Contrata a los mejores DJs para tu fiesta.</p>
+</section>
+<section id="registro">
+<h2>Regístrate</h2>
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <button type="submit">Enviar</button>
+</form>
+</section>
+<section id="catalogo">
+<h2>Catálogo de DJs</h2>
+<div class="dj-list">
+    <div class="dj">
+        <h3>DJ Fiesta</h3>
+        <p>Especialista en música electrónica y pop.</p>
+    </div>
+    <div class="dj">
+        <h3>DJ Retro</h3>
+        <p>Perfecto para eventos con música de los 80s y 90s.</p>
+    </div>
+</div>
+</section>
+<footer>
+<p>&copy; 2025 DJ Eventos Sociales. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
+
+/* Responsive*/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Eventos Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color:  rgb(12, 11, 11);;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .jumbotron {
+            background: url('dj-event.jpg') no-repeat center center/cover;
+            color: rgb(46, 44, 44);
+            padding: 50px 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .dj-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .dj {
+            background: #eee;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .dj-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .dj {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DJ para Eventos Sociales</h1>
+        <nav>
+            <ul>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="jumbotron">
+        <h2>¡Haz que tu evento sea inolvidable!</h2>
+        <p>Contrata a los mejores DJs para tu fiesta.</p>
+    </section>
+    <section id="registro">
+        <h2>Regístrate</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="catalogo">
+        <h2>Catálogo de DJs</h2>
+        <div class="dj-list">
+            <div class="dj">
+                <h3>DJ Fiesta</h3>
+                <p>Especialista en música electrónica y pop.</p>
+            </div>
+            <div class="dj">
+                <h3>DJ Retro</h3>
+                <p>Perfecto para eventos con música de los 80s y 90s.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 DJ Eventos Sociales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
